@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    font-size: 32px;
+}
+@media only screen and (max-width: 1000px){
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        padding: 1rem;
+        font-size: 32px;
+        width: 100%;
+    }
+};
+
+.product-container{
+    font-size: 1rem;
+    margin: 0.5rem 1rem;
+    width: 200px;
+}
+
+.title{
+    font-weight: 700;
+    padding-bottom: 0.4rem;
+}
+
+.description {
+    padding-bottom: 0.4rem;
+}

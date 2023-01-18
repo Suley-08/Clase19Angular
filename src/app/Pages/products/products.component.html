@@ -1,1 +1,12 @@
-<p>products works!</p>
+<div class="container mt-5">
+  <div class="product-container" *ngFor="let product of products">
+    <h6 class="title">{{ product.title }}</h6>
+    <p class="description">{{ product.description }}</p>
+    <img
+      [src]="product.images[0]"
+      alt="product image"
+      width="150"
+      [routerLink]="['/product', product.id]"
+    />
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #769b93;
+    padding: 1rem
+}
+.bi-yin-yang{
+    color: white;
+    font-size: 30px;
+}

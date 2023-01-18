@@ -1,12 +1,18 @@
-<div class="container mt-5">
-  <div class="product-container" *ngFor="let product of products">
-    <h6 class="title">{{ product.title }}</h6>
-    <p class="description">{{ product.description }}</p>
-    <img
+<div class="container justify-content-center my-5">
+  <div class="product-row" *ngFor="let product of products">
+    <div class="col-md-4">
+      <h6 class="title">{{ product.title }}</h6>
+    </div>
+    <div class="col-md-4">
+      <p class="description">{{ product.description }}</p>
+    </div>
+    <div class="col-md-4">
+      <img
       [src]="product.images[0]"
       alt="product image"
-      width="150"
+      width="250"
       [routerLink]="['/product', product.id]"
     />
+    </div>
   </div>
 </div>
